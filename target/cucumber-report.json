@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To check that webdriver tutorial page has loaded",
+        "description": "",
+        "id": "to-check-the-main-tutorial-course-page;to-check-that-webdriver-tutorial-page-has-loaded",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11710733300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to Google.com",
+            "match": {
+              "location": "myFirstStepDefinition.i_navigate_to_mercury_new_tours_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161385300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to search page",
+            "match": {
+              "location": "myFirstStepDefinition.i_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19828500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the page title should be visible",
+            "match": {
+              "location": "myFirstStepDefinition.the_page_title_should_be_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2039182300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Close Browser",
+            "match": {
+              "location": "myFirstStepDefinition.close_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To check the main tutorial course page",
+    "description": "",
+    "id": "to-check-the-main-tutorial-course-page",
+    "keyword": "Feature",
+    "uri": "com/org/learningMaven/myFirstFeature.feature"
+  }
+]
