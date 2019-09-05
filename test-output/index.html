@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-sample_suite">
-                    <span>C:\Users\sandeep.jain\workspace_POM\myMavenProject\testng.xml</span>
+                    <span>C:\Users\sandeep.jain\git\Java_Maven\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -58,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-sample_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +102,7 @@
                     <div class="method-list-content passed suite-sample_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-sample_suite" title="com.org.learningMaven.HelloWorldTest" hash-for-method="TestMethodSample">TestMethodSample</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-sample_suite" title="com.org.learningMaven.myFirstStepDefinition" hash-for-method="feature(To check the main tutorial course page)">feature(To check the main tutorial course page)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-sample_suite -->
@@ -119,14 +120,17 @@
           <div class="suite-sample_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.org.learningMaven.HelloWorldTest</span>
+              <span class="class-name">com.org.learningMaven.myFirstStepDefinition</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestMethodSample">
-                  </a> <!-- TestMethodSample -->
-                  <span class="method-name">TestMethodSample</span>
+                  <a name="feature(To check the main tutorial course page)">
+                  </a> <!-- feature(To check the main tutorial course page) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(To check the main tutorial course page)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,20 +138,16 @@
         </div> <!-- panel sample_suite -->
         <div panel-name="test-xml-sample_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sandeep.jain\workspace_POM\myMavenProject\testng.xml</span>
+            <span class="header-content">C:\Users\sandeep.jain\git\Java_Maven\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;sample suite&quot;&gt;
-  &lt;test name=&quot;sample test&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;com.org.learningMaven&quot;/&gt;
-    &lt;/packages&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sample test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.org.learningMaven.HelloWorldTest&quot;/&gt;
-      &lt;class name=&quot;com.org.learningMaven.ReusableMethods&quot;/&gt;
+      &lt;class name=&quot;com.org.learningMaven.myFirstStepDefinition&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sample test --&gt;
 &lt;/suite&gt; &lt;!-- sample suite --&gt;
@@ -161,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">sample test (2 classes)</span>
+                <span class="test-name">sample test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +171,14 @@
             <span class="header-content">Groups for sample suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-sample_suite" class="panel">
@@ -189,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestMethodSample')
-data.setCell(0, 2, 'com.org.learningMaven.HelloWorldTest')
-data.setCell(0, 3, 9567);
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'com.org.learningMaven.myFirstStepDefinition')
+data.setCell(0, 3, 15805);
 window.suiteTableData['sample_suite']= { tableData: data, tableDiv: 'times-div-sample_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-sample_suite">
               </div> <!-- times-div-sample_suite -->
             </div> <!-- times-div -->
@@ -222,11 +230,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.org.learningMaven.HelloWorldTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TestMethodSample</span>
+              <div class="chronological-class-name">com.org.learningMaven.myFirstStepDefinition</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(To check the main tutorial course page)</span>
+                <span class="method-start">881 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">16692 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

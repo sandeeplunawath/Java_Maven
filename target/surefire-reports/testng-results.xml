@@ -2,16 +2,34 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="6866" started-at="2016-12-28T15:58:09Z" finished-at="2016-12-28T15:58:16Z">
+  <suite name="sample suite" duration-ms="14763" started-at="2019-09-05T12:21:16Z" finished-at="2019-09-05T12:21:30Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.org.learningMaven.myFirstStepDefinition@4157f54e]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="6866" started-at="2016-12-28T15:58:09Z" finished-at="2016-12-28T15:58:16Z">
-      <class name="com.org.learningMaven.HelloWorldTest">
-        <test-method status="PASS" signature="TestMethodSample()[pri:0, instance:com.org.learningMaven.HelloWorldTest@668bc3d5]" name="TestMethodSample" duration-ms="6857" started-at="2016-12-28T21:28:09Z" finished-at="2016-12-28T21:28:16Z">
+    <test name="sample test" duration-ms="14763" started-at="2019-09-05T12:21:16Z" finished-at="2019-09-05T12:21:30Z">
+      <class name="com.org.learningMaven.myFirstStepDefinition">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.org.learningMaven.myFirstStepDefinition@4157f54e]" name="setUpClass" is-config="true" duration-ms="598" started-at="2019-09-05T17:51:16Z" finished-at="2019-09-05T17:51:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestMethodSample -->
-      </class> <!-- com.org.learningMaven.HelloWorldTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.org.learningMaven.myFirstStepDefinition@4157f54e]" name="feature" duration-ms="13957" started-at="2019-09-05T17:51:16Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-05T17:51:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[To check the main tutorial course page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.org.learningMaven.myFirstStepDefinition@4157f54e]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2019-09-05T17:51:30Z" finished-at="2019-09-05T17:51:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.org.learningMaven.myFirstStepDefinition -->
+    </test> <!-- sample test -->
+  </suite> <!-- sample suite -->
 </testng-results>

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <suite name="sample suite">
 	<test name="sample test">
-		<packages>
-			<package name="com.org.learningMaven" />
-		</packages>
+		 <classes>
+            <class name="com.org.learningMaven.myFirstStepDefinition"></class>
+        </classes>
 	</test>
 </suite>

@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ReusableMethods {
 
-	public static WebDriver driver;
+	public WebDriver driver;
 	
 	public void Login()
 	{		
