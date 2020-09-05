@@ -18,8 +18,10 @@ public class myFirstStepDefinition extends AbstractTestNGCucumberTests {
 	@Given("^I navigate to Google\\.com$")
 	public void i_navigate_to_mercury_new_tours_com() throws Throwable {
 		System.out.println("Navigate tours method");
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\libraries\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\libraries\\chromedriver.exe");
 		 
+		System.setProperty("webdriver.chrome.driver", "/home/vsts/work/1/s/libraries/chromedriver.exe");
+			 
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
